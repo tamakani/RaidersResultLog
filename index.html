@@ -1,0 +1,1835 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#92ad86">
+  <title>SPL Raiders Result Web v1.0.0</title>
+  <link rel="icon" href="data:image/png;base64,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">
+  <style>
+*{box-sizing:border-box}
+:root{
+  font-family:"Yu Gothic UI","Meiryo",system-ui,sans-serif;
+  color:#283126;
+  background:#92ad86;
+}
+body{margin:0;background:#92ad86}
+button,select,input{font:inherit}
+button{cursor:pointer}
+.app-shell{display:flex;min-height:100vh;padding:12px;gap:14px}
+.sidebar{
+  width:250px;flex:0 0 250px;background:#7F9E75;border-radius:12px;
+  padding:12px;display:flex;flex-direction:column;position:sticky;top:12px;height:calc(100vh - 24px)
+}
+.brand{display:flex;gap:10px;align-items:center;padding:6px 4px 16px;color:white}
+.brand-icon{width:42px;height:42px;object-fit:contain}
+.brand small{display:block;opacity:.8;margin-top:2px}
+nav{display:flex;flex-direction:column;gap:12px}
+.nav-btn{
+  min-height:60px;border:0;border-radius:8px;background:#9CCDCA;color:white;
+  font-size:19px
+}
+.nav-btn:hover,.nav-btn.active{background:#78ACA9}
+.sidebar-note{margin-top:auto;color:#edf5e8;font-size:12px;line-height:1.5;padding:10px}
+.content{flex:1;min-width:0;padding:8px 10px 50px}
+.page{display:none;max-width:1200px;margin:auto}
+.page.active{display:block}
+h1{font-size:28px;margin:8px 0 22px}
+h2{font-size:18px;margin:0 0 18px}
+.subheading{margin-top:24px}
+.card{
+  background:#CBDAB9;border-radius:10px;padding:20px;margin-bottom:20px;
+}
+.form-grid{display:grid;grid-template-columns:180px minmax(0,1fr);gap:18px 16px;align-items:center}
+.inline{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+input,select{
+  width:100%;min-height:38px;border:1px solid #8FA286;border-radius:8px;
+  padding:7px 10px;background:#F1F5ED;color:#333
+}
+select{background:#E3ECD9}
+input[type=number]{max-width:110px}
+button,.file-button{
+  border:0;border-radius:7px;padding:9px 15px;background:#5F8F87;color:white;font-weight:700;
+  display:inline-flex;align-items:center;justify-content:center
+}
+button:hover,.file-button:hover{filter:brightness(.94)}
+button.primary{background:#5F8F87}
+button.danger{background:#B76E6E}
+button:disabled{background:#9AA58F;color:#e7e7e7;cursor:not-allowed}
+.action-row{display:flex;justify-content:flex-end;margin-top:18px}
+.action-row button{min-width:180px;min-height:48px}
+.notice{
+  background:#DDEBD5;color:#3F5F3A;border:1px solid #A9C89D;border-radius:7px;
+  padding:9px 12px;margin:-10px 0 18px;font-weight:700
+}
+.hidden{display:none!important}
+.preview{background:#E8F0E0;border-radius:6px;padding:10px;white-space:pre-line;line-height:1.6}
+.equipment-box{background:#B8CCA4;border-radius:8px;padding:14px;margin:10px 0 18px}
+.equipment-row{display:grid;grid-template-columns:140px 1fr;gap:12px;align-items:start}
+.equipment-row strong{padding-top:8px}
+.equipment-controls{display:grid;grid-template-columns:repeat(2,minmax(150px,1fr));gap:10px}
+.equipment-controls.one{grid-template-columns:minmax(150px,1fr)}
+.checkbox-row{
+  grid-column:auto;
+  display:flex;
+  align-items:center;
+  min-height:38px
+}
+.checkbox-row label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  width:100%;
+  min-height:38px;
+  padding:7px 10px;
+  background:#E3ECD9;
+  border:1px solid #8FA286;
+  border-radius:8px
+}
+.checkbox-row input{width:auto;min-height:auto;margin:0}
+.validation{color:#A14F4F;font-weight:700;margin-top:10px;min-height:22px}
+.loadout-note{margin:-8px 0 12px;color:#4b5848;font-size:13px}
+#resultEquipmentEditor .equipment-box{margin-bottom:10px}
+#resultEquipmentToggleWrap{margin-top:14px}
+#resultEquipmentSection{margin-top:10px}
+.edit-equipment-heading{margin:18px 0 8px}
+#editEquipmentEditor .equipment-box{margin-bottom:10px}
+.edit-myset-loader{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin:10px 0 14px
+}
+.edit-myset-loader select{flex:1}
+.edit-myset-loader button{white-space:nowrap}
+
+
+.registered-row select{flex:1}
+.filters{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:12px;margin-bottom:14px}
+.filters label{display:flex;flex-direction:column;gap:5px}
+.buttons{margin-top:8px}
+.table-card{padding:15px}
+.table-wrap{overflow:auto;background:#f5f7f2;border-radius:7px}
+table{border-collapse:collapse;width:100%;min-width:1050px;background:#fff}
+th,td{
+  padding:10px;
+  border-right:1px solid #c7d1c2;
+  border-bottom:1px solid #c7d1c2;
+  text-align:left;
+  white-space:nowrap
+}
+th:first-child,td:first-child{border-left:1px solid #c7d1c2}
+thead th{border-top:1px solid #c7d1c2}
+th{background:#e1ead8;cursor:pointer;position:sticky;top:0}
+tbody tr.result-row{cursor:pointer}
+tbody tr.result-row:nth-of-type(4n+1){background:#fff}
+tbody tr.result-row:nth-of-type(4n+3){background:#f6f8f4}
+tbody tr.result-row.selected{outline:2px solid #5F8F87;outline-offset:-2px;background:#e2eee1}
+.detail-col{width:72px;text-align:center}
+.detail-toggle{
+  min-width:54px;
+  padding:6px 8px;
+  font-size:13px;
+  background:#7F9E75
+}
+.detail-row td{
+  white-space:normal;
+  background:#eef4e9;
+  padding:14px 16px;
+  border-top:0
+}
+.result-detail-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(240px,1fr));
+  gap:10px 18px
+}
+.result-detail-item{
+  background:#E3ECD9;
+  border:1px solid #bdc9b6;
+  border-radius:7px;
+  padding:10px 12px;
+  line-height:1.55
+}
+.result-detail-item strong{
+  display:block;
+  margin-bottom:3px
+}
+.result-detail-wide{grid-column:1/-1}
+
+.table-footer{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.settings-actions{display:flex;gap:10px;flex-wrap:wrap}
+.site-notice{
+  margin:32px 8px 0;
+  padding-top:18px;
+  border-top:1px solid rgba(40,49,38,.22);
+  font-size:11px;
+  line-height:1.75;
+  color:#4f5b4c;
+}
+.site-notice p{margin:0 0 12px}
+.site-notice .copyright{text-align:center;margin-top:18px}
+.file-button input{display:none}
+dialog{border:0;border-radius:12px;padding:0;max-width:650px;width:calc(100% - 30px)}
+dialog::backdrop{background:rgba(0,0,0,.35)}
+#editForm{padding:22px;background:#eef3e9}
+.dialog-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dialog-grid label{display:flex;flex-direction:column;gap:5px}
+.dialog-grid .wide{grid-column:1/-1}
+.dialog-grid input{max-width:none}
+.dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}
+
+.mobile-results{display:none}
+
+@media(max-width:850px){
+  body{padding-bottom:78px}
+  .app-shell{display:block;padding:8px}
+  .sidebar{
+    width:auto;
+    height:auto;
+    position:static;
+    margin-bottom:10px;
+    padding:8px 8px 6px
+  }
+  .brand{padding:2px 4px 8px}
+  .brand-icon{width:34px;height:34px}
+  nav{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px
+  }
+  .nav-btn{
+    min-height:48px;
+    font-size:15px;
+    padding:8px 10px
+  }
+  .sidebar-note{display:none}
+  .content{padding:6px}
+  h1{font-size:24px;margin-top:6px}
+  .card{padding:14px;margin-bottom:14px}
+  .form-grid{grid-template-columns:1fr;gap:7px}
+  .filters{grid-template-columns:1fr}
+  .equipment-row{grid-template-columns:1fr}
+  .equipment-controls{grid-template-columns:1fr}
+  .checkbox-row{grid-column:1}
+  .dialog-grid{grid-template-columns:1fr}
+  .table-wrap{display:none}
+  .table-footer{
+    align-items:stretch;
+    gap:10px;
+    flex-direction:column
+  }
+  .table-footer>.inline.buttons{display:none}
+  .mobile-results{
+    display:flex;
+    flex-direction:column;
+    gap:12px
+  }
+  .mobile-result-card{
+    background:#F6F8F4;
+    border:1px solid #bfcab9;
+    border-radius:10px;
+    overflow:hidden
+  }
+  .mobile-result-card.selected{
+    outline:2px solid #5F8F87;
+    outline-offset:0
+  }
+  .mobile-result-main{
+    padding:14px
+  }
+  .mobile-result-date{
+    font-size:12px;
+    color:#62705e;
+    margin-bottom:6px
+  }
+  .mobile-result-title{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:10px
+  }
+  .mobile-result-subtitle{
+    font-size:14px;
+    color:#4f5a4c;
+    margin-bottom:12px
+  }
+  .mobile-result-stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px
+  }
+  .mobile-stat{
+    background:#E3ECD9;
+    border:1px solid #c4cec0;
+    border-radius:7px;
+    padding:9px
+  }
+  .mobile-stat small{
+    display:block;
+    color:#64705f;
+    margin-bottom:2px
+  }
+  .mobile-result-actions{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+    padding:10px 12px 12px;
+    background:#eaf0e5
+  }
+  .mobile-result-actions button{
+    min-width:0;
+    padding:8px 6px;
+    font-size:13px
+  }
+  .mobile-result-detail{
+    display:none;
+    padding:0 12px 12px;
+    background:#eaf0e5
+  }
+  .mobile-result-detail.open{display:block}
+  .result-detail-grid{grid-template-columns:1fr}
+  .result-detail-wide{grid-column:auto}
+  dialog{max-height:92vh;overflow:auto}
+  .settings-actions{flex-direction:column}
+  .settings-actions button,.file-button{width:100%}
+  .edit-myset-loader{flex-direction:column;align-items:stretch}
+  .edit-myset-loader button{width:100%}
+}
+
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAACjdpQ0NQc1JHQiBJRUM2MTk2Ni0yLjEAAEiJnZZ3VFPZFofPvTe9UJIQipTQa2hSAkgNvUiRLioxCRBKwJAAIjZEVHBEUZGmCDIo4ICjQ5GxIoqFAVGx6wQZRNRxcBQblklkrRnfvHnvzZvfH/d+a5+9z91n733WugCQ/IMFwkxYCYAMoVgU4efFiI2LZ2AHAQzwAANsAOBws7NCFvhGApkCfNiMbJkT+Be9ug4g+fsq0z+MwQD/n5S5WSIxAFCYjOfy+NlcGRfJOD1XnCW3T8mYtjRNzjBKziJZgjJWk3PyLFt89pllDznzMoQ8GctzzuJl8OTcJ+ONORK+jJFgGRfnCPi5Mr4mY4N0SYZAxm/ksRl8TjYAKJLcLuZzU2RsLWOSKDKCLeN5AOBIyV/w0i9YzM8Tyw/FzsxaLhIkp4gZJlxTho2TE4vhz89N54vFzDAON40j4jHYmRlZHOFyAGbP/FkUeW0ZsiI72Dg5ODBtLW2+KNR/Xfybkvd2ll6Ef+4ZRB/4w/ZXfpkNALCmZbXZ+odtaRUAXesBULv9h81gLwCKsr51Dn1xHrp8XlLE4ixnK6vc3FxLAZ9rKS/o7/qfDn9DX3zPUr7d7+VhePOTOJJ0MUNeN25meqZExMjO4nD5DOafh/gfB/51HhYR/CS+iC+URUTLpkwgTJa1W8gTiAWZQoZA+J+a+A/D/qTZuZaJ2vgR0JZYAqUhGkB+HgAoKhEgCXtkK9DvfQvGRwP5zYvRmZid+8+C/n1XuEz+yBYkf45jR0QyuBJRzuya/FoCNCAARUAD6kAb6AMTwAS2wBG4AA/gAwJBKIgEcWAx4IIUkAFEIBcUgLWgGJSCrWAnqAZ1oBE0gzZwGHSBY+A0OAcugctgBNwBUjAOnoAp8ArMQBCEhcgQFVKHdCBDyByyhViQG+QDBUMRUByUCCVDQkgCFUDroFKoHKqG6qFm6FvoKHQaugANQ7egUWgS+hV6ByMwCabBWrARbAWzYE84CI6EF8HJ8DI4Hy6Ct8CVcAN8EO6ET8OX4BFYCj+BpxGAEBE6ooswERbCRkKReCQJESGrkBKkAmlA2pAepB+5ikiRp8hbFAZFRTFQTJQLyh8VheKilqFWoTajqlEHUJ2oPtRV1ChqCvURTUZros3RzugAdCw6GZ2LLkZXoJvQHeiz6BH0OPoVBoOhY4wxjhh/TBwmFbMCsxmzG9OOOYUZxoxhprFYrDrWHOuKDcVysGJsMbYKexB7EnsFO459gyPidHC2OF9cPE6IK8RV4FpwJ3BXcBO4GbwS3hDvjA/F8/DL8WX4RnwPfgg/jp8hKBOMCa6ESEIqYS2hktBGOEu4S3hBJBL1iE7EcKKAuIZYSTxEPE8cJb4lUUhmJDYpgSQhbSHtJ50i3SK9IJPJRmQPcjxZTN5CbiafId8nv1GgKlgqBCjwFFYr1Ch0KlxReKaIVzRU9FRcrJivWKF4RHFI8akSXslIia3EUVqlVKN0VOmG0rQyVdlGOVQ5Q3mzcovyBeVHFCzFiOJD4VGKKPsoZyhjVISqT2VTudR11EbqWeo4DUMzpgXQUmmltG9og7QpFYqKnUq0Sp5KjcpxFSkdoRvRA+jp9DL6Yfp1+jtVLVVPVb7qJtU21Suqr9XmqHmo8dVK1NrVRtTeqTPUfdTT1Lepd6nf00BpmGmEa+Rq7NE4q/F0Dm2OyxzunJI5h+fc1oQ1zTQjNFdo7tMc0JzW0tby08rSqtI6o/VUm67toZ2qvUP7hPakDlXHTUegs0PnpM5jhgrDk5HOqGT0MaZ0NXX9dSW69bqDujN6xnpReoV67Xr39An6LP0k/R36vfpTBjoGIQYFBq0Gtw3xhizDFMNdhv2Gr42MjWKMNhh1GT0yVjMOMM43bjW+a0I2cTdZZtJgcs0UY8oyTTPdbXrZDDazN0sxqzEbMofNHcwF5rvNhy3QFk4WQosGixtMEtOTmcNsZY5a0i2DLQstuyyfWRlYxVtts+q3+mhtb51u3Wh9x4ZiE2hTaNNj86utmS3Xtsb22lzyXN+5q+d2z31uZ27Ht9tjd9Oeah9iv8G+1/6Dg6ODyKHNYdLRwDHRsdbxBovGCmNtZp13Qjt5Oa12Oub01tnBWex82PkXF6ZLmkuLy6N5xvP48xrnjbnquXJc612lbgy3RLe9blJ3XXeOe4P7Aw99D55Hk8eEp6lnqudBz2de1l4irw6v12xn9kr2KW/E28+7xHvQh+IT5VPtc99XzzfZt9V3ys/eb4XfKX+0f5D/Nv8bAVoB3IDmgKlAx8CVgX1BpKAFQdVBD4LNgkXBPSFwSGDI9pC78w3nC+d3hYLQgNDtoffCjMOWhX0fjgkPC68JfxhhE1EQ0b+AumDJgpYFryK9Issi70SZREmieqMVoxOim6Nfx3jHlMdIY61iV8ZeitOIE8R1x2Pjo+Ob4qcX+izcuXA8wT6hOOH6IuNFeYsuLNZYnL74+BLFJZwlRxLRiTGJLYnvOaGcBs700oCltUunuGzuLu4TngdvB2+S78ov508kuSaVJz1Kdk3enjyZ4p5SkfJUwBZUC56n+qfWpb5OC03bn/YpPSa9PQOXkZhxVEgRpgn7MrUz8zKHs8yzirOky5yX7Vw2JQoSNWVD2Yuyu8U02c/UgMREsl4ymuOWU5PzJjc690iecp4wb2C52fJNyyfyffO/XoFawV3RW6BbsLZgdKXnyvpV0Kqlq3pX668uWj2+xm/NgbWEtWlrfyi0LiwvfLkuZl1PkVbRmqKx9X7rW4sVikXFNza4bKjbiNoo2Di4ae6mqk0fS3glF0utSytK32/mbr74lc1XlV992pK0ZbDMoWzPVsxW4dbr29y3HShXLs8vH9sesr1zB2NHyY6XO5fsvFBhV1G3i7BLsktaGVzZXWVQtbXqfXVK9UiNV017rWbtptrXu3m7r+zx2NNWp1VXWvdur2DvzXq/+s4Go4aKfZh9OfseNkY39n/N+rq5SaOptOnDfuF+6YGIA33Njs3NLZotZa1wq6R18mDCwcvfeH/T3cZsq2+nt5ceAockhx5/m/jt9cNBh3uPsI60fWf4XW0HtaOkE+pc3jnVldIl7Y7rHj4aeLS3x6Wn43vL7/cf0z1Wc1zleNkJwomiE59O5p+cPpV16unp5NNjvUt675yJPXOtL7xv8GzQ2fPnfM+d6ffsP3ne9fyxC84Xjl5kXey65HCpc8B+oOMH+x86Bh0GO4cch7ovO13uGZ43fOKK+5XTV72vnrsWcO3SyPyR4etR12/eSLghvcm7+ehW+q3nt3Nuz9xZcxd9t+Se0r2K+5r3G340/bFd6iA9Puo9OvBgwYM7Y9yxJz9l//R+vOgh+WHFhM5E8yPbR8cmfScvP174ePxJ1pOZp8U/K/9c+8zk2Xe/ePwyMBU7Nf5c9PzTr5tfqL/Y/9LuZe902PT9VxmvZl6XvFF/c+At623/u5h3EzO577HvKz+Yfuj5GPTx7qeMT59+A/eE8/vH0Tt4AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAbdEVYdFNvZnR3YXJlAENlbHN5cyBTdHVkaW8gVG9vbMGn4XwAAAQNSURBVHic7dtNbAxhHMfx74gTITi161IHiQYV4mYTPSJxkLoIDupIWpFU0oqTt0MTQbhyICGhHCTl4NBD3dAoCSf2Yl0kPYiexDi0z/bZnZln/s/LjIr5nbYz033m95lnX7L7bBTHMWWkMTPRNtDXzzOt26/fvG07dvjKZFTKSQFRBVABVAClDFQBVAAVwP8NoHJj7EDmgGUWV6kAygR4NXHh99LI0VJZ7ST2DFxcUdoJUTDAjbEDrcK1Wje17po2cjrA2g1drFnX1drVs3OgUJDgAHppPa4AeorACAaQVVwlBIBKSIggAHnlISwAhEPwApAUV6nVuqntPadtiaN6Xy/Tsx+BaAng+0sRgIovhDOAtPzuI9f04bTb6QB6Nv76IDoXHwQnAEn59uKt4bTb+QAqEghXBGuAvPLpxVvDabflACp5EC4IVgB+5cEXAMIjiAH8y0MnwPant3l/6BQ2ABAWIQiArDzoANuf3mr98f7QaesnIhNCcABT+TNXn0fTsx+FBcIB1Pu2RF/ePs78PylCLoDkytf7eoUIEY25nwAcnLrbAnjWfyIG6Fm/WnDKC+WnZz/F4D8TnAE6p70JoTE33/a3Xl5FIahkYejlVbIQvAGk5U3pLA8yAJDPCHBHKAwgrbiKFEBFAhEcwPfqZwGklVfJQpDOBBcEKwDfKw9uACquM6ECsAVwnf4+5VV8EWwfBqkAL+6fTwCs2XHcOHBeeQgDAG4IVgCNmYkEwNeV24yDqjc4poQDWGXc/+PdvcS2fccu/z8Arx+cTWwbvjJZHECo8iq+CMsSAMLNACgeILExBADAwam7mfue9Z8Q30/POgPAw1SAVHwxwKZdhxPHTc9+WjjeAmB8aDBz38jNO+L7UQD1Hb2JfddH9ye22QIU8hBg4QOBeHxoMHEyIzfvWH0m8E8+B7AIAKAj2JaHCmB5AYAYIQjAX3ofsNX4EiZ5K8xieVjmAK+eXEg/oc1HMwcVACTuc3xoMCpj+oMlAGQgGADAiJBZ3hYh5NWHwACQipB75aUIeeWhaACwnQXiaS9BcLn64AgA7ggAjbn5YGtvXK88mMtDcQCx8FVBlL8GAE4Ibcf7QEiKg3t58AGABMLi192J410Q0sqnffuUVR4CAYAMIat8Z0wYkiuuI/iWB4uvx00I9YFLovIpw5PyQpGbel9vdH10v2nJbfj1AVkAzWYzbja/WX1fqA2PC4DpykNBAJBEUOVV7BHsAUKWB4dFUgqhs7yKDYJ8XcFCQpcHx2Vyj26d/J1WXo8EQgqQVxzcykPpCyXbkwcgKQ7u5aHEpbIqOkgngLSwHp/yUOJi6dDxLa5S2nL5kAlVHkr8wUSIhCyuUtpPZlxTRGk9pf5oSgJSdOHO/AF/K8euZjrhOQAAAABJRU5ErkJggg==" alt="" class="brand-icon">
+        <div>
+          <strong>SPL Raiders Result</strong>
+          <small>Web v1.0.0</small>
+        </div>
+      </div>
+
+      <nav>
+        <button class="nav-btn active" data-page="input">リザルトを入力</button>
+        <button class="nav-btn" data-page="results">リザルト一覧</button>
+        <button class="nav-btn" data-page="mysets">マイセットの登録</button>
+        <button class="nav-btn" data-page="settings">設定</button>
+      </nav>
+
+      <div class="sidebar-note">
+        データはこのブラウザ内に保存されます。
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="page-input" class="page active">
+        <h1>リザルトを入力</h1>
+        <div id="inputNotice" class="notice hidden"></div>
+
+        <div class="card">
+          <h2>ステージ情報</h2>
+          <div class="form-grid">
+            <label>ジャンル</label>
+            <select id="genre"></select>
+
+            <label>ステージ</label>
+            <div id="normalStageWrap"><select id="stage"></select></div>
+            <div id="infiniteStageWrap" class="inline hidden">
+              <input id="infiniteSection" type="number" min="1" max="999" value="1">
+              <span>対象階数:</span>
+              <strong id="infiniteDisplay">1階～3階</strong>
+            </div>
+
+            <label>クリアタイム</label>
+            <div class="inline">
+              <input id="minutes" type="number" min="0" max="99" value="0"><span>分</span>
+              <input id="seconds" type="number" min="0" max="59" value="0"><span>秒</span>
+            </div>
+
+            <label>参加人数</label>
+            <div class="inline">
+              <input id="participants" type="number" min="1" max="4" value="1"><span>人</span>
+            </div>
+
+            <label>メモ</label>
+            <input id="memo" type="text" placeholder="メモを入力">
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>マイセット</h2>
+          <div class="form-grid">
+            <label>使用するマイセット</label>
+            <select id="inputMyset"><option value="">未選択</option></select>
+          </div>
+          <div id="resultEquipmentToggleWrap" class="hidden">
+            <button id="showResultEquipment" type="button">装備を個別に設定</button>
+          </div>
+
+          <div id="resultEquipmentSection" class="hidden">
+            <h2 class="subheading">このリザルトで使用する装備</h2>
+            <p class="loadout-note">ここで変更しても登録済みマイセットの中身は変わりません。</p>
+            <div id="resultEquipmentEditor"></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>ドロップ品</h2>
+          <div class="form-grid">
+            <label>ウズシオクリスタル</label>
+            <div class="inline"><input id="crystal" type="number" min="0" max="99" value="0"><span>個</span></div>
+            <label>☆5ブキ</label>
+            <div class="inline"><input id="starWeapon" type="number" min="0" max="99" value="0"><span>個</span></div>
+            <label>☆5パーツ</label>
+            <div class="inline"><input id="starParts" type="number" min="0" max="99" value="0"><span>個</span></div>
+          </div>
+        </div>
+
+        <div class="action-row"><button id="saveResult" class="primary">リザルトを保存</button></div>
+      </section>
+
+      <section id="page-results" class="page">
+        <h1>リザルト一覧</h1>
+        <div id="resultsNotice" class="notice hidden"></div>
+
+        <div class="card">
+          <h2>絞り込み</h2>
+          <div class="filters">
+            <label>ジャンル<select id="filterGenre"><option>すべて</option></select></label>
+            <label>ステージ<select id="filterStage"><option>すべて</option></select></label>
+            <label>参加人数
+              <select id="filterParticipants">
+                <option>すべて</option><option>1人</option><option>2人</option>
+                <option>3人</option><option>4人</option><option>2人以上</option>
+              </select>
+            </label>
+          </div>
+          <div class="inline buttons">
+            <button id="resetFilters">絞り込み解除</button>
+            <button id="refreshResults">一覧を更新</button>
+          </div>
+        </div>
+
+        <div class="card table-card">
+          <div id="mobileResults" class="mobile-results"></div>
+
+          <div class="table-wrap">
+            <table id="resultsTable">
+              <thead>
+                <tr>
+                  <th data-sort="recordedAt">記録日時</th>
+                  <th data-sort="genre">ジャンル</th>
+                  <th data-sort="stage">ステージ</th>
+                  <th data-sort="totalSeconds">タイム</th>
+                  <th data-sort="participants">参加人数</th>
+                  <th data-sort="mysetName">マイセット</th>
+                  <th data-sort="crystal">クリスタル</th>
+                  <th data-sort="starWeapon">☆5ブキ</th>
+                  <th data-sort="starParts">☆5パーツ</th>
+                  <th data-sort="memo">メモ</th>
+                  <th class="detail-col">詳細</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="table-footer">
+            <strong id="resultCount">0件</strong>
+            <div class="inline buttons">
+              <button id="editResult">編集</button>
+              <button id="deleteResult" class="danger">削除</button>
+              <button id="copyResult">入力へコピー</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="page-mysets" class="page">
+        <h1>マイセットの登録</h1>
+
+        <div class="card">
+          <div class="form-grid">
+            <label>マイセット名</label>
+            <input id="mysetName" type="text" value="新しいマイセット" placeholder="例: 周回用、ボス用">
+          </div>
+
+          <h2 class="subheading">装備品</h2>
+          <div id="equipmentEditor"></div>
+          <div id="mysetValidation" class="validation"></div>
+          <div class="action-row"><button id="saveMyset" class="primary">マイセットを保存</button></div>
+        </div>
+
+        <div class="card">
+          <h2>登録済みマイセット</h2>
+          <div class="inline registered-row">
+            <select id="registeredMyset"></select>
+            <button id="editMyset">編集</button>
+            <button id="deleteMyset" class="danger">削除</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="page-settings" class="page">
+        <h1>設定</h1>
+
+        <div class="card">
+          <h2>データ</h2>
+          <p>Web版では任意フォルダへの常時保存ではなく、このブラウザのローカルストレージに保存します。</p>
+          <div class="settings-actions">
+            <button id="exportCsv" class="primary">results.csv を書き出す</button>
+            <label class="file-button">results.csv を読み込む<input id="importCsv" type="file" accept=".csv,text/csv"></label>
+
+            <button id="exportMysets">mysets.json を書き出す</button>
+            <label class="file-button">mysets.json を読み込む<input id="importMysets" type="file" accept=".json,application/json"></label>
+
+            <button id="exportBackup">全データをバックアップ</button>
+            <label class="file-button">バックアップを復元<input id="importBackup" type="file" accept=".json,application/json"></label>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>バージョン</h2>
+          <p>SPL Raiders Result Web v1.0.0</p>
+        </div>
+
+        <div class="site-notice">
+          <p>Raiders Result Log は「スプラトゥーン レイダーズ」のプレイ結果を記録・管理するための非公式ファンメイドツールです。<br>
+          本サイトは任天堂株式会社およびその他の関連企業とは一切関係ありません。<br>
+          「スプラトゥーン」およびゲーム内の名称等に関する権利は、それぞれの権利者に帰属します。</p>
+
+          <p>入力したリザルト・マイセット等のデータは、原則として利用者のブラウザ内に保存され、本サイトのサーバーには送信・保存されません。<br>
+          ブラウザのデータ削除等により記録が失われる場合があるため、必要に応じてバックアップ機能をご利用ください。</p>
+
+          <p>本ツールの利用によって生じたデータ消失その他の損害について、作者は責任を負いかねます。</p>
+
+          <p class="copyright">© 2026 デカニチャン</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="editDialog">
+    <form method="dialog" id="editForm">
+      <h2>リザルト編集</h2>
+      <div class="dialog-grid">
+        <label>記録日時<input id="editRecordedAt" type="text"></label>
+        <label>ジャンル<input id="editGenre" type="text"></label>
+        <label>ステージ<input id="editStage" type="text"></label>
+        <label>分<input id="editMinutes" type="number" min="0"></label>
+        <label>秒<input id="editSeconds" type="number" min="0" max="59"></label>
+        <label>参加人数<input id="editParticipants" type="number" min="1" max="4"></label>
+        <label>クリスタル<input id="editCrystal" type="number" min="0"></label>
+        <label>☆5ブキ<input id="editStarWeapon" type="number" min="0"></label>
+        <label>☆5パーツ<input id="editStarParts" type="number" min="0"></label>
+        <label class="wide">メモ<input id="editMemo" type="text"></label>
+      </div>
+      <h3 class="edit-equipment-heading">装備</h3>
+      <p class="loadout-note">このリザルトに保存されている装備スナップショットを編集します。登録済みマイセットには影響しません。</p>
+
+      <div class="edit-myset-loader">
+        <select id="editMysetSelect">
+          <option value="">マイセットを選択</option>
+        </select>
+        <button id="loadMysetIntoEdit" type="button">マイセットの内容を入れる</button>
+      </div>
+
+      <div id="editEquipmentEditor"></div>
+      <div class="dialog-actions">
+        <button value="cancel">キャンセル</button>
+        <button id="commitEdit" value="default" class="primary">保存</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script>
+const EMBEDDED_STAGES = {
+  "探検": [
+    "ミシシル奇岩群",
+    "ペパラナ岸壁",
+    "カラバナーラ湿地",
+    "コロッコ山道",
+    "シャーヤ崖",
+    "ヤカソホ火山",
+    "オーボン噴火口",
+    "バナラ山",
+    "マバーナス噴気孔群",
+    "ルトルト溶岩流",
+    "ムグロ氷河",
+    "アマエバ雪山",
+    "ハマチャ尖氷群",
+    "シージャー山脈",
+    "シャーカラーマ洞穴"
+  ],
+  "デカ結晶": [
+    "カキタモ浦",
+    "タラナダバタタ岩石群",
+    "ケレーイ溶岩湖",
+    "サハタケレーメ氷山",
+    "タマ湖",
+    "チャコケレネ浜"
+  ],
+  "巣窟": [
+    "ペレーン巣窟",
+    "モロゴロート巣窟",
+    "ベンゲレ巣窟",
+    "ウニギリ巣窟",
+    "テンパラ巣窟",
+    "ミシ巣窟",
+    "チヂマ巣窟",
+    "ヒヤヤッケ巣窟",
+    "アンナン巣窟",
+    "ストロボロ巣窟",
+    "チリキンコン巣窟",
+    "マッサマナ巣窟",
+    "ウムバサ巣窟",
+    "アナガ巣窟",
+    "クーロスロー巣窟",
+    "カラワッソム巣窟",
+    "プリム巣窟"
+  ],
+  "地下遺跡": [
+    "コンパタージャ地下遺跡",
+    "マンタイカ地下遺跡",
+    "トツトアゴ地下遺跡",
+    "ギャーザ地下遺跡",
+    "チュクムンツ地下遺跡",
+    "カッパマカ地下遺跡",
+    "サラタムアンマタ地下遺跡",
+    "隠れ遺跡シャカ=ハラーカ",
+    "隠れ遺跡サマーカ=サーマン",
+    "隠れ遺跡チャワチャワ=ヤカ"
+  ],
+  "つまみぐい": [
+    "押し寄せる旨味",
+    "駆け抜ける磯の風味",
+    "かいくぐるスリル",
+    "なめらかすぎるノドごし",
+    "ねっとりした粘り気",
+    "すっぱり爽やかなキレ",
+    "ガツンと濃い味",
+    "後引くやみつきの味",
+    "こころ弾む食感",
+    "追いかける恋の甘味",
+    "投げきった青春の塩味",
+    "まるごとかきまぜミックス味",
+    "衝撃の噛みごたえ",
+    "ふわり漂う香ばしさ",
+    "広がる5種のフレーバー",
+    "ハジけるような口当たり",
+    "ツンと突き抜ける香り",
+    "深みへと誘うコク",
+    "ヘルシー志向スピードメニュー",
+    "スタミナ満点パワーメニュー",
+    "バランス良好テクニカルメニュー",
+    "フルコース~スピードの極味~",
+    "フルコース~パワーの極味~",
+    "フルコース~テクニカルの極味~"
+  ],
+  "大食堂": [
+    "サルモン大食堂 上層",
+    "サルモン大食堂 中層",
+    "サルモン大食堂 下層"
+  ],
+  "思い出": [
+    "仕入れの砂浜",
+    "カワムカ海岸",
+    "アクヌク街道",
+    "ウロコトロ地下遺跡",
+    "フナモリア祈祷堂",
+    "イシガマド祭礼堂",
+    "レイトコル遙拝堂",
+    "サルモン大食堂 海上",
+    "サルモン大食堂 玉座の間",
+    "無限食堂 黄金の間"
+  ],
+  "無限食堂": []
+};
+
+const EMBEDDED_EQUIPMENT = {
+  "ブキ": {
+    "シューター": [
+      "エレガンスイーパー",
+      "オーリオスイーパー",
+      "きゅうめいシューター",
+      "クリーンシューター",
+      "コンフィスイーパー",
+      "トニックシューター",
+      "PETシューター",
+      "ぷかぷかシューター",
+      "べにづるシューター"
+    ],
+    "チャージャー": [
+      "アルカリチャージャー",
+      "ウォッシュチャージャー",
+      "オキシチャージャー",
+      "ディーゼル4K",
+      "ハイオク4K",
+      "レギュラー4K"
+    ],
+    "ブラスター": [
+      "アブラブラスター",
+      "スチームブラスター",
+      "トイブラスターハンド",
+      "トイブラスターシャーク",
+      "トイブラスターラッパ",
+      "プロパンブラスター"
+    ],
+    "ローラー": [
+      "エビローラー",
+      "エンジンローラー",
+      "ダクトローラー",
+      "チューブローラー",
+      "バルーンローラー",
+      "ペルトンローラー"
+    ],
+    "フデ": [
+      "サイクルブラシ",
+      "ツール・ド・ブラシ",
+      "プーリーブラシ"
+    ],
+    "バケツ": [
+      "カモスロッシャー",
+      "サンドスロッシャー",
+      "パウスロッシャー7R",
+      "パウスロッシャーDC",
+      "パウスロッシャーTB",
+      "ポリスロッシャー"
+    ],
+    "スピナー": [
+      "ABCスピナー",
+      "LPGスピナー",
+      "ディスクスピナーケロシン",
+      "ディスクスピナーブイ",
+      "ディスクスピナーミネラル",
+      "LN2スピナー"
+    ],
+    "マニューバー": [
+      "スクィーズマニューバー",
+      "ダイナーマニューバー",
+      "ツインカンカンアルミ",
+      "ツインカンカンチタン",
+      "ツインカンカンスチール",
+      "フォーミュラマニューバー"
+    ],
+    "シェルター": [
+      "シートシェルターサーモ",
+      "シートシェルターブルー",
+      "シートシェルターヤタイ",
+      "パームシェルター",
+      "フラワーシェルター",
+      "フルーツシェルター"
+    ],
+    "ワイパー": [
+      "ウッドワイパー",
+      "プラワイパー",
+      "レールワイパー"
+    ],
+    "ストリンガー": [
+      "アルペンストリンガー",
+      "スマッシュストリンガー",
+      "バンブーストリンガー"
+    ]
+  },
+  "ガジェット": {
+    "スピード": [
+      "カチコミシューズ",
+      "ダッシュボム",
+      "ジェットブーメラン",
+      "ジャンプボム",
+      "ニンジャワイヤー"
+    ],
+    "パワー": [
+      "ズバットスラッシャー",
+      "スピンホイール",
+      "ヌリヌリサテライト",
+      "メテオグローブ",
+      "ウズマキバスター"
+    ],
+    "テクニカル": [
+      "スケットポット",
+      "ゴレンライナー",
+      "ツナガルバルーン",
+      "ヒッパレーザー",
+      "マキアゲスクリュー"
+    ]
+  },
+  "秘宝パワー": [
+    "イカがまん",
+    "イカ焼き",
+    "イカロールアタック",
+    "インクの達人",
+    "インファイト",
+    "奥義パワー",
+    "オールセット",
+    "ガジェットブースト(スピード)",
+    "ガジェットブースト(スリル)",
+    "ガジェットブースト(センプク)",
+    "ガジェットブースト(ダメージ)",
+    "ガジェットブースト(とどめ)",
+    "ガジェットブースト(フライ)",
+    "ガジェットブースト(リスク)",
+    "空中ジャンプ",
+    "集中攻撃",
+    "スピードアップ",
+    "スピードマスター",
+    "センプク回復力強化",
+    "デカイクラ収集家",
+    "デカイクラバースト",
+    "テクニカルマスター",
+    "とどめバースト",
+    "パワーマスター",
+    "ヒートアップ",
+    "ピンチはチャンス",
+    "ピンチバースト",
+    "ライフセーブ",
+    "ロングレンジ"
+  ],
+  "タンク": [
+    "スピード",
+    "パワー",
+    "テクニカル"
+  ],
+  "パートナー": [
+    "フウカ",
+    "ウツホ",
+    "マンタロー"
+  ]
+};
+
+const STORAGE_RESULTS = "splRaiders.results.v1";
+const STORAGE_MYSETS = "splRaiders.mysets.v1";
+
+const CSV_FIELDS = [
+  "記録日時","ジャンル","ステージ","クリアタイム","クリア秒数","参加人数","マイセット名",
+  "ブキ","ガジェット1","ガジェット2","ガジェット3",
+  "秘宝パワー1","秘宝パワー2","秘宝パワー3","秘宝パワー4","秘宝パワー5","秘宝パワー6",
+  "タンク","パートナー","ウズシオクリスタル","☆5ブキ","☆5パーツ","メモ"
+];
+
+const CATEGORY_LIMITS = {"ブキ":1,"ガジェット":3,"秘宝パワー":5,"タンク":1,"パートナー":1};
+const REQUIRED_CATEGORIES = new Set(["ブキ","タンク","パートナー"]);
+
+let stages = {};
+let equipment = {};
+let results = loadJson(STORAGE_RESULTS, []);
+let mysets = loadJson(STORAGE_MYSETS, []);
+let selectedResultId = null;
+let expandedResultId = null;
+let sortKey = "recordedAt";
+let sortReverse = true;
+let editingResultId = null;
+let editEquipmentDraft = null;
+
+// リザルト入力用の装備スナップショット。
+// 登録済みマイセットとは別オブジェクトとして保持する。
+let resultEquipmentDraft = {
+  "ブキ": [],
+  "ガジェット": [],
+  "秘宝パワー": [],
+  "タンク": [],
+  "パートナー": []
+};
+
+let manualEquipmentOpened = false;
+
+const $ = (id) => document.getElementById(id);
+
+function loadJson(key, fallback){
+  try{
+    const raw = localStorage.getItem(key);
+    return raw ? JSON.parse(raw) : fallback;
+  }catch{return fallback;}
+}
+function persist(){
+  localStorage.setItem(STORAGE_RESULTS, JSON.stringify(results));
+  localStorage.setItem(STORAGE_MYSETS, JSON.stringify(mysets));
+}
+function uid(){ return crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random()}`; }
+function intVal(id, fallback=0){ const n = parseInt($(id).value,10); return Number.isFinite(n)?n:fallback; }
+function pad2(n){ return String(n).padStart(2,"0"); }
+function nowString(){
+  const d=new Date();
+  return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}`;
+}
+function showNotice(id, text){
+  const e=$(id); e.textContent=text; e.classList.remove("hidden");
+  setTimeout(()=>e.classList.add("hidden"),2500);
+}
+
+function listDateOnly(value){
+  const text=String(value||"").trim();
+  const m=text.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if(!m)return text;
+  return `${m[1]}-${m[2]}-${m[3]}`;
+}
+function switchPage(name){
+  document.querySelectorAll(".page").forEach(p=>p.classList.toggle("active",p.id===`page-${name}`));
+  document.querySelectorAll(".nav-btn").forEach(b=>b.classList.toggle("active",b.dataset.page===name));
+  if(name==="results") refreshResults();
+}
+document.querySelectorAll(".nav-btn").forEach(b=>b.addEventListener("click",()=>switchPage(b.dataset.page)));
+
+function init(){
+  stages = EMBEDDED_STAGES;
+  equipment = EMBEDDED_EQUIPMENT;
+  initStageUi();
+  buildEquipmentEditor();
+  refreshMysetUi();
+  // 初期状態のリザルト用装備欄を生成
+  updateMysetPreview();
+  refreshResults();
+}
+function initStageUi(){
+  $("genre").innerHTML="";
+  Object.keys(stages).forEach(g=>$("genre").add(new Option(g,g)));
+  $("genre").addEventListener("change",updateStageUi);
+  $("infiniteSection").addEventListener("input",updateInfiniteStage);
+  updateStageUi();
+}
+function updateStageUi(){
+  const genre=$("genre").value;
+  const infinite=genre==="無限食堂";
+  $("normalStageWrap").classList.toggle("hidden",infinite);
+  $("infiniteStageWrap").classList.toggle("hidden",!infinite);
+  if(infinite){ updateInfiniteStage(); return; }
+  $("stage").innerHTML="";
+  (stages[genre]||[]).forEach(s=>$("stage").add(new Option(s,s)));
+}
+function updateInfiniteStage(){
+  let section=Math.max(1,Math.min(999,intVal("infiniteSection",1)));
+  $("infiniteSection").value=section;
+  let start,end;
+  if(section<=33){start=(section-1)*3+1;end=section*3;}
+  else{start=101+(section-34)*3;end=start+2;}
+  $("infiniteDisplay").textContent=`${start}階～${end}階`;
+}
+function selectedStage(){ return $("genre").value==="無限食堂" ? $("infiniteDisplay").textContent : $("stage").value; }
+
+function refreshMysetUi(){
+  const input=$("inputMyset"), reg=$("registeredMyset");
+  const oldInput=input.value, oldReg=reg.value;
+  input.innerHTML='<option value="">未選択</option>';
+  reg.innerHTML="";
+  mysets.forEach(m=>{
+    input.add(new Option(m.name,m.name));
+    reg.add(new Option(m.name,m.name));
+  });
+  if([...input.options].some(o=>o.value===oldInput)) input.value=oldInput;
+  if([...reg.options].some(o=>o.value===oldReg)) reg.value=oldReg;
+  updateMysetPreview();
+}
+$("inputMyset").addEventListener("change",updateMysetPreview);
+function cloneEquipment(source){
+  const out={};
+  Object.keys(CATEGORY_LIMITS).forEach(category=>{
+    out[category]=Array.isArray(source?.[category]) ? [...source[category]] : [];
+  });
+  return out;
+}
+
+function equipmentFromResult(result){
+  return {
+    "ブキ":[result?.weapon||""].filter(Boolean),
+    "ガジェット":[...(result?.gadgets||[])].filter(Boolean),
+    "秘宝パワー":[...(result?.treasures||[])].filter(Boolean),
+    "タンク":[result?.tank||""].filter(Boolean),
+    "パートナー":[result?.partner||""].filter(Boolean)
+  };
+}
+
+function equipmentSlots(source, category, count){
+  const values=[...(Array.isArray(source?.[category]) ? source[category] : [])].slice(0,count);
+  while(values.length<count)values.push("");
+  return values;
+}
+
+function hasOption(select,value){
+  return [...select.options].some(option=>option.value===value);
+}
+
+function firstRealOptionValue(select){
+  return [...select.options].find(option=>option.value!=="")?.value || "";
+}
+
+function firstEquipmentValues(){
+  const out={};
+  Object.entries(CATEGORY_LIMITS).forEach(([cat,limit])=>{
+    const raw=equipment[cat]||[];
+    let items=[];
+    if(Array.isArray(raw)){
+      items=[...raw];
+    }else{
+      Object.values(raw).forEach(group=>{
+        if(Array.isArray(group))items.push(...group);
+      });
+    }
+
+    if(REQUIRED_CATEGORIES.has(cat)){
+      out[cat]=items.slice(0,limit);
+    }else{
+      out[cat]=[];
+    }
+  });
+  return out;
+}
+
+function updateMysetPreview(){
+  const m=mysets.find(x=>x.name===$("inputMyset").value);
+  const toggleWrap=$("resultEquipmentToggleWrap");
+  const section=$("resultEquipmentSection");
+
+  if(!m){
+    resultEquipmentDraft=firstEquipmentValues();
+
+    if(manualEquipmentOpened){
+      toggleWrap.classList.add("hidden");
+      section.classList.remove("hidden");
+      renderResultEquipmentEditor();
+    }else{
+      section.classList.add("hidden");
+      toggleWrap.classList.remove("hidden");
+    }
+    return;
+  }
+
+  // マイセット選択時は装備欄を自動表示
+  manualEquipmentOpened=false;
+  toggleWrap.classList.add("hidden");
+  section.classList.remove("hidden");
+
+  // 選択したマイセットをリザルト入力専用データとしてコピー
+  resultEquipmentDraft=cloneEquipment(m.equipment||{});
+  renderResultEquipmentEditor();
+}
+
+function addEquipmentOptions(select, category){
+  const raw=equipment[category]||[];
+
+  if(!REQUIRED_CATEGORIES.has(category)){
+    select.add(new Option("未選択",""));
+  }
+
+  if(Array.isArray(raw)){
+    raw.forEach(x=>select.add(new Option(String(x),String(x))));
+  }else{
+    Object.entries(raw).forEach(([sub,items])=>{
+      const group=document.createElement("optgroup");
+      group.label=sub;
+      (items||[]).forEach(x=>group.appendChild(new Option(String(x),String(x))));
+      select.appendChild(group);
+    });
+  }
+}
+
+function renderDraftEquipmentEditor(hostId, draft, endlessDataAttribute){
+  const host=$(hostId);
+  if(!host || !draft)return;
+
+  host.innerHTML="";
+
+  Object.entries(CATEGORY_LIMITS).forEach(([category,limit])=>{
+    const box=document.createElement("div");
+    box.className="equipment-box";
+
+    const row=document.createElement("div");
+    row.className="equipment-row";
+
+    const title=document.createElement("strong");
+    title.textContent=category;
+
+    const controls=document.createElement("div");
+    controls.className=`equipment-controls ${limit===1?"one":""}`;
+
+    const current=Array.isArray(draft[category]) ? [...draft[category]] : [];
+
+    const syncDraft=()=>{
+      const values=[...controls.querySelectorAll("select")].map(select=>select.value).filter(Boolean);
+      const endless=controls.querySelector(`input[${endlessDataAttribute}="1"]`)?.checked;
+      if(endless)values.push("終わりなき探求");
+      draft[category]=values;
+    };
+
+    for(let slot=0;slot<limit;slot++){
+      const select=document.createElement("select");
+      addEquipmentOptions(select,category);
+
+      const wanted=current[slot]||"";
+      if(hasOption(select,wanted)){
+        select.value=wanted;
+      }else{
+        select.value=REQUIRED_CATEGORIES.has(category) ? firstRealOptionValue(select) : "";
+      }
+
+      select.addEventListener("change",syncDraft);
+      controls.appendChild(select);
+    }
+
+    if(category==="秘宝パワー"){
+      const wrap=document.createElement("div");
+      wrap.className="checkbox-row";
+      const checked=current.includes("終わりなき探求");
+      wrap.innerHTML=`<label><input type="checkbox" ${endlessDataAttribute}="1" ${checked?"checked":""}> 終わりなき探求</label>`;
+      wrap.querySelector("input").addEventListener("change",syncDraft);
+      controls.appendChild(wrap);
+    }
+
+    row.append(title,controls);
+    box.appendChild(row);
+    host.appendChild(box);
+  });
+}
+
+function renderResultEquipmentEditor(){
+  renderDraftEquipmentEditor("resultEquipmentEditor",resultEquipmentDraft,"data-endless");
+}
+
+$("showResultEquipment").addEventListener("click",()=>{
+  manualEquipmentOpened=true;
+  $("resultEquipmentToggleWrap").classList.add("hidden");
+  $("resultEquipmentSection").classList.remove("hidden");
+  renderResultEquipmentEditor();
+});
+
+$("saveResult").addEventListener("click",()=>{
+  const minutes=intVal("minutes"), seconds=intVal("seconds");
+  const myset=mysets.find(x=>x.name===$("inputMyset").value);
+  const eq=cloneEquipment(resultEquipmentDraft);
+  const w=equipmentSlots(eq,"ブキ",1);
+  const g=equipmentSlots(eq,"ガジェット",3);
+  const t=equipmentSlots(eq,"秘宝パワー",6);
+  const tank=equipmentSlots(eq,"タンク",1);
+  const partner=equipmentSlots(eq,"パートナー",1);
+  results.push({
+    id:uid(), recordedAt:nowString(), genre:$("genre").value, stage:selectedStage(),
+    clearTime:`${pad2(minutes)}:${pad2(seconds)}`, totalSeconds:minutes*60+seconds,
+    participants:intVal("participants",1), mysetName:myset?.name||"",
+    weapon:w[0], gadgets:g, treasures:t, tank:tank[0], partner:partner[0],
+    crystal:intVal("crystal"), starWeapon:intVal("starWeapon"), starParts:intVal("starParts"),
+    memo:$("memo").value.trim()
+  });
+  persist();
+  $("minutes").value=0;$("seconds").value=0;$("crystal").value=0;$("starWeapon").value=0;$("starParts").value=0;$("memo").value="";
+  switchPage("results");
+  showNotice("resultsNotice","✓ リザルトを保存しました");
+});
+
+function buildEquipmentEditor(){
+  const host=$("equipmentEditor"); host.innerHTML="";
+  Object.entries(CATEGORY_LIMITS).forEach(([category,limit])=>{
+    const box=document.createElement("div"); box.className="equipment-box";
+    const row=document.createElement("div"); row.className="equipment-row";
+    const title=document.createElement("strong"); title.textContent=category;
+    const controls=document.createElement("div"); controls.className=`equipment-controls ${limit===1?"one":""}`;
+    for(let i=0;i<limit;i++){
+      const select=document.createElement("select");
+      select.dataset.category=category; select.dataset.slot=i;
+      // ブキ・タンク・パートナーは必須なので「未選択」を表示しない
+      if (!REQUIRED_CATEGORIES.has(category)) {
+        select.add(new Option("未選択",""));
+      }
+      const raw=equipment[category]||[];
+      if(Array.isArray(raw)){
+        raw.forEach(x=>select.add(new Option(String(x),String(x))));
+      }else{
+        Object.entries(raw).forEach(([sub,items])=>{
+          const group=document.createElement("optgroup"); group.label=sub;
+          (items||[]).forEach(x=>group.appendChild(new Option(String(x),String(x))));
+          select.appendChild(group);
+        });
+      }
+      // デフォルトで先頭の実装備を選択
+      const firstRealOption = [...select.options].find(o => o.value !== "");
+      if (firstRealOption) {
+        select.value = firstRealOption.value;
+      }
+
+      select.addEventListener("change",validateMyset);
+      controls.appendChild(select);
+    }
+    if(category==="秘宝パワー"){
+      const c=document.createElement("div"); c.className="checkbox-row";
+      c.innerHTML='<label><input id="endlessExploration" type="checkbox"> 終わりなき探求</label>';
+      controls.appendChild(c);
+    }
+    // 複数枠カテゴリは、重複しないよう先頭から順番に選択
+    const selects = [...controls.querySelectorAll("select")];
+    selects.forEach((s, i) => {
+      const selectable = [...s.options].filter(o => o.value !== "");
+      if (selectable.length > i) {
+        s.value = selectable[i].value;
+      } else if (selectable.length > 0) {
+        s.value = selectable[0].value;
+      }
+    });
+
+    row.append(title,controls);box.appendChild(row);host.appendChild(box);
+  });
+  $("mysetName").addEventListener("input",validateMyset);
+  validateMyset();
+}
+function categoryValues(cat){
+  return [...document.querySelectorAll(`select[data-category="${cat}"]`)].map(x=>x.value).filter(Boolean);
+}
+function validateMyset(){
+  let msg="";
+  const name=$("mysetName").value.trim();
+  if(!name)msg="⚠ マイセット名を入力してください。";
+  else{
+    for(const [cat,limit] of Object.entries(CATEGORY_LIMITS)){
+      const values=categoryValues(cat);
+      if(REQUIRED_CATEGORIES.has(cat)&&values.length<limit){msg=`⚠ ${cat}を${limit}個選択してください。`;break;}
+      if(new Set(values).size!==values.length){msg=`⚠ ${cat}内で同じ装備品は複数選択できません。`;break;}
+    }
+  }
+  $("mysetValidation").textContent=msg;
+  $("saveMyset").disabled=!!msg;
+  return !msg;
+}
+function setMysetEditorFromData(myset){
+  if(!myset)return;
+
+  $("mysetName").value=myset.name||"";
+
+  Object.entries(CATEGORY_LIMITS).forEach(([category,limit])=>{
+    const values=Array.isArray(myset.equipment?.[category])
+      ? [...myset.equipment[category]]
+      : [];
+
+    const endlessIndex=values.indexOf("終わりなき探求");
+    const hasEndless=endlessIndex>=0;
+    const normalValues=values.filter(v=>v!=="終わりなき探求");
+
+    const selects=[...document.querySelectorAll(`select[data-category="${category}"]`)];
+
+    selects.forEach((select,index)=>{
+      const wanted=normalValues[index]||"";
+
+      if(hasOption(select,wanted)){
+        select.value=wanted;
+      }else if(REQUIRED_CATEGORIES.has(category)){
+        select.value=firstRealOptionValue(select);
+      }else{
+        select.value="";
+      }
+    });
+
+    if(category==="秘宝パワー" && $("endlessExploration")){
+      $("endlessExploration").checked=hasEndless;
+    }
+  });
+
+  validateMyset();
+
+  // 上側の登録フォームへ視線を戻す
+  $("mysetName").scrollIntoView({behavior:"smooth",block:"center"});
+  $("mysetName").focus();
+  $("mysetName").select();
+}
+
+$("editMyset").addEventListener("click",()=>{
+  const name=$("registeredMyset").value;
+  if(!name)return;
+
+  const myset=mysets.find(m=>m.name===name);
+  if(!myset)return;
+
+  setMysetEditorFromData(myset);
+});
+
+$("saveMyset").addEventListener("click",()=>{
+  if(!validateMyset())return;
+  const name=$("mysetName").value.trim();
+  const eq={};
+  Object.keys(CATEGORY_LIMITS).forEach(cat=>eq[cat]=categoryValues(cat));
+  if($("endlessExploration")?.checked)eq["秘宝パワー"].push("終わりなき探求");
+  const existing=mysets.findIndex(m=>m.name===name);
+  if(existing>=0 && !confirm(`「${name}」は既に登録されています。\n上書きしますか？`))return;
+  const data={name,equipment:eq};
+  if(existing>=0)mysets[existing]=data;else mysets.push(data);
+  persist();refreshMysetUi();alert(`「${name}」を保存しました。`);
+});
+$("deleteMyset").addEventListener("click",()=>{
+  const name=$("registeredMyset").value;if(!name)return;
+  if(!confirm(`「${name}」を削除しますか？`))return;
+  mysets=mysets.filter(m=>m.name!==name);persist();refreshMysetUi();
+});
+
+function filters(){
+  return {genre:$("filterGenre").value,stage:$("filterStage").value,participants:$("filterParticipants").value};
+}
+function rebuildFilters(){
+  const current=filters();
+  const genres=[...new Set(results.map(r=>r.genre).filter(Boolean))].sort();
+  $("filterGenre").innerHTML='<option>すべて</option>';
+  genres.forEach(x=>$("filterGenre").add(new Option(x,x)));
+  if([...$("filterGenre").options].some(o=>o.value===current.genre))$("filterGenre").value=current.genre;
+  rebuildStageFilter(current.stage);
+}
+function rebuildStageFilter(wanted){
+  const genre=$("filterGenre").value;
+  const stagesList=[...new Set(results.filter(r=>genre==="すべて"||r.genre===genre).map(r=>r.stage).filter(Boolean))].sort();
+  $("filterStage").innerHTML='<option>すべて</option>';
+  stagesList.forEach(x=>$("filterStage").add(new Option(x,x)));
+  if([...$("filterStage").options].some(o=>o.value===wanted))$("filterStage").value=wanted;
+}
+$("filterGenre").addEventListener("change",()=>{rebuildStageFilter("すべて");renderResults();});
+$("filterStage").addEventListener("change",renderResults);
+$("filterParticipants").addEventListener("change",renderResults);
+$("resetFilters").addEventListener("click",()=>{$("filterGenre").value="すべて";rebuildStageFilter("すべて");$("filterParticipants").value="すべて";renderResults();});
+$("refreshResults").addEventListener("click",refreshResults);
+function filteredResults(){
+  const f=filters();
+  return results.filter(r=>{
+    if(f.genre!=="すべて"&&r.genre!==f.genre)return false;
+    if(f.stage!=="すべて"&&r.stage!==f.stage)return false;
+    if(f.participants==="2人以上"&&Number(r.participants)<2)return false;
+    if(f.participants!=="すべて"&&f.participants!=="2人以上"&&Number(r.participants)!==parseInt(f.participants))return false;
+    return true;
+  });
+}
+function refreshResults(){rebuildFilters();renderResults();}
+
+function resultDetailHtml(r){
+  const esc = (v) => String(v ?? "")
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+
+  const gadgets=(r.gadgets||[]).filter(Boolean).join(" / ") || "なし";
+  const treasures=(r.treasures||[]).filter(Boolean).join(" / ") || "なし";
+
+  return `
+    <div class="result-detail-grid">
+      <div class="result-detail-item result-detail-wide">
+        <strong>記録日時</strong>
+        ${esc(r.recordedAt || "")}
+      </div>
+      <div class="result-detail-item">
+        <strong>マイセット</strong>
+        ${esc(r.mysetName || "未選択")}
+      </div>
+      <div class="result-detail-item">
+        <strong>ブキ</strong>
+        ${esc(r.weapon || "なし")}
+      </div>
+      <div class="result-detail-item result-detail-wide">
+        <strong>ガジェット</strong>
+        ${esc(gadgets)}
+      </div>
+      <div class="result-detail-item result-detail-wide">
+        <strong>秘宝パワー</strong>
+        ${esc(treasures)}
+      </div>
+      <div class="result-detail-item">
+        <strong>タンク</strong>
+        ${esc(r.tank || "なし")}
+      </div>
+      <div class="result-detail-item">
+        <strong>パートナー</strong>
+        ${esc(r.partner || "なし")}
+      </div>
+    </div>
+  `;
+}
+
+function renderMobileResults(rows){
+  const host=$("mobileResults");
+  if(!host)return;
+
+  host.innerHTML="";
+
+  rows.forEach(r=>{
+    const card=document.createElement("div");
+    card.className="mobile-result-card";
+    if(r.id===selectedResultId)card.classList.add("selected");
+
+    const main=document.createElement("div");
+    main.className="mobile-result-main";
+
+    const date=document.createElement("div");
+    date.className="mobile-result-date";
+    date.textContent=listDateOnly(r.recordedAt);
+
+    const title=document.createElement("div");
+    title.className="mobile-result-title";
+    title.textContent=r.stage||"";
+
+    const subtitle=document.createElement("div");
+    subtitle.className="mobile-result-subtitle";
+    subtitle.textContent=`${r.genre||""} / ${r.mysetName||"未選択"}`;
+
+    const stats=document.createElement("div");
+    stats.className="mobile-result-stats";
+
+    const statData=[
+      ["タイム",r.clearTime||""],
+      ["参加人数",`${r.participants||""}人`],
+      ["クリスタル",r.crystal??0],
+      ["☆5ブキ / パーツ",`${r.starWeapon??0} / ${r.starParts??0}`]
+    ];
+
+    statData.forEach(([label,value])=>{
+      const box=document.createElement("div");
+      box.className="mobile-stat";
+      box.innerHTML=`<small>${label}</small><strong>${value}</strong>`;
+      stats.appendChild(box);
+    });
+
+    main.append(date,title,subtitle,stats);
+
+    const actions=document.createElement("div");
+    actions.className="mobile-result-actions";
+
+    const detailBtn=document.createElement("button");
+    detailBtn.textContent=expandedResultId===r.id ? "閉じる" : "詳細";
+
+    const editBtn=document.createElement("button");
+    editBtn.textContent="編集";
+
+    const copyBtn=document.createElement("button");
+    copyBtn.textContent="コピー";
+
+    const deleteBtn=document.createElement("button");
+    deleteBtn.textContent="削除";
+    deleteBtn.className="danger";
+
+    detailBtn.addEventListener("click",()=>{
+      selectedResultId=r.id;
+      expandedResultId=expandedResultId===r.id ? null : r.id;
+      renderResults();
+    });
+
+    editBtn.addEventListener("click",()=>{
+      selectedResultId=r.id;
+      openEdit(r.id);
+    });
+
+    copyBtn.addEventListener("click",()=>{
+      selectedResultId=r.id;
+      $("copyResult").click();
+    });
+
+    deleteBtn.addEventListener("click",()=>{
+      selectedResultId=r.id;
+      $("deleteResult").click();
+    });
+
+    actions.append(detailBtn,editBtn,copyBtn,deleteBtn);
+
+    const detail=document.createElement("div");
+    detail.className="mobile-result-detail";
+    if(expandedResultId===r.id)detail.classList.add("open");
+    detail.innerHTML=resultDetailHtml(r);
+
+    card.append(main,actions,detail);
+
+    card.addEventListener("click",event=>{
+      if(event.target.closest("button"))return;
+      selectedResultId=r.id;
+      renderResults();
+    });
+
+    host.appendChild(card);
+  });
+}
+
+function renderResults(){
+  let rows=filteredResults();
+  rows.sort((a,b)=>{
+    let av=a[sortKey]??"", bv=b[sortKey]??"";
+    if(["totalSeconds","participants","crystal","starWeapon","starParts"].includes(sortKey)){
+      av=Number(av)||0;bv=Number(bv)||0;
+    }else if(sortKey==="recordedAt"){
+      av=Date.parse(String(av).replace(" ","T"))||0;
+      bv=Date.parse(String(bv).replace(" ","T"))||0;
+    }else{
+      av=String(av).toLowerCase();bv=String(bv).toLowerCase();
+    }
+    return av<bv?-1:av>bv?1:0;
+  });
+  if(sortReverse)rows.reverse();
+
+  renderMobileResults(rows);
+
+  const body=$("resultsTable").querySelector("tbody"); body.innerHTML="";
+  rows.forEach(r=>{
+    const tr=document.createElement("tr");
+    tr.dataset.id=r.id;
+    tr.classList.add("result-row");
+
+    if(r.id===selectedResultId)tr.classList.add("selected");
+
+    const vals=[
+      listDateOnly(r.recordedAt),r.genre,r.stage,r.clearTime,r.participants,
+      r.mysetName||"未選択",r.crystal,r.starWeapon,r.starParts,r.memo
+    ];
+
+    vals.forEach(v=>{
+      const td=document.createElement("td");
+      td.textContent=v??"";
+      tr.appendChild(td);
+    });
+
+    const detailTd=document.createElement("td");
+    detailTd.className="detail-col";
+
+    const detailButton=document.createElement("button");
+    detailButton.className="detail-toggle";
+    detailButton.textContent=expandedResultId===r.id ? "閉じる" : "詳細";
+
+    detailButton.addEventListener("click",(event)=>{
+      event.stopPropagation();
+      selectedResultId=r.id;
+      expandedResultId=expandedResultId===r.id ? null : r.id;
+      renderResults();
+    });
+
+    detailTd.appendChild(detailButton);
+    tr.appendChild(detailTd);
+
+    tr.addEventListener("click",()=>{
+      selectedResultId=r.id;
+      renderResults();
+    });
+
+    tr.addEventListener("dblclick",()=>openEdit(r.id));
+    body.appendChild(tr);
+
+    if(expandedResultId===r.id){
+      const detailTr=document.createElement("tr");
+      detailTr.className="detail-row";
+
+      const detailCell=document.createElement("td");
+      detailCell.colSpan=11;
+      detailCell.innerHTML=resultDetailHtml(r);
+
+      detailTr.appendChild(detailCell);
+      body.appendChild(detailTr);
+    }
+  });
+  $("resultCount").textContent=`${rows.length}件`;
+}
+document.querySelectorAll("#resultsTable th[data-sort]").forEach(th=>th.addEventListener("click",()=>{
+  const key=th.dataset.sort;
+  if(sortKey===key)sortReverse=!sortReverse;else{sortKey=key;sortReverse=false;}
+  renderResults();
+}));
+function selectedResult(){
+  const r=results.find(x=>x.id===selectedResultId);
+  if(!r)alert("操作するリザルトを一覧から選択してください。");
+  return r;
+}
+$("deleteResult").addEventListener("click",()=>{
+  const r=selectedResult();if(!r)return;
+  if(!confirm(`このリザルトを削除しますか？\n\n${r.recordedAt}\n${r.genre} / ${r.stage}\nタイム: ${r.clearTime}`))return;
+  results=results.filter(x=>x.id!==r.id);
+  selectedResultId=null;
+  if(expandedResultId===r.id)expandedResultId=null;
+  persist();
+  refreshResults();
+});
+$("copyResult").addEventListener("click",()=>{
+  const r=selectedResult();if(!r)return;
+  if([...$("genre").options].some(o=>o.value===r.genre)){$("genre").value=r.genre;updateStageUi();}
+  if(r.genre==="無限食堂"){
+    const m=String(r.stage).match(/^(\d+)階[～~-](\d+)階$/);
+    if(m){
+      const start=Number(m[1]);let section=null;
+      if(start>=1&&start<=97&&(start-1)%3===0)section=(start-1)/3+1;
+      else if(start>=101&&(start-101)%3===0)section=(start-101)/3+34;
+      if(section)$("infiniteSection").value=section;
+      updateInfiniteStage();
+    }
+  }else if([...$("stage").options].some(o=>o.value===r.stage))$("stage").value=r.stage;
+  $("minutes").value=Math.floor(Number(r.totalSeconds)/60);
+  $("seconds").value=Number(r.totalSeconds)%60;
+  $("participants").value=r.participants;$("crystal").value=r.crystal;$("starWeapon").value=r.starWeapon;$("starParts").value=r.starParts;$("memo").value=r.memo||"";
+  $("inputMyset").value=[...$("inputMyset").options].some(o=>o.value===r.mysetName)?r.mysetName:"";
+
+  // 過去リザルトに保存された装備スナップショットをそのまま編集欄へコピー。
+  // 登録済みマイセットの現在値には依存しない。
+  resultEquipmentDraft=equipmentFromResult(r);
+
+  manualEquipmentOpened=true;
+  $("resultEquipmentToggleWrap").classList.add("hidden");
+  $("resultEquipmentSection").classList.remove("hidden");
+  renderResultEquipmentEditor();
+  switchPage("input");showNotice("inputNotice","✓ リザルトの内容をコピーしました");
+});
+
+$("editResult").addEventListener("click",()=>{const r=selectedResult();if(r)openEdit(r.id);});
+function refreshEditMysetSelect(){
+  const select=$("editMysetSelect");
+  if(!select)return;
+
+  const current=select.value;
+  select.innerHTML='<option value="">マイセットを選択</option>';
+
+  mysets.forEach(myset=>{
+    select.add(new Option(myset.name,myset.name));
+  });
+
+  if([...select.options].some(o=>o.value===current)){
+    select.value=current;
+  }
+}
+
+function renderEditEquipmentEditor(){
+  renderDraftEquipmentEditor("editEquipmentEditor",editEquipmentDraft,"data-edit-endless");
+}
+
+$("loadMysetIntoEdit").addEventListener("click",()=>{
+  const name=$("editMysetSelect").value;
+  if(!name){
+    alert("読み込むマイセットを選択してください。");
+    return;
+  }
+
+  const myset=mysets.find(m=>m.name===name);
+  if(!myset)return;
+
+  editEquipmentDraft=cloneEquipment(myset.equipment||{});
+
+  // このリザルトで使ったマイセット名も読み込んだものへ変更
+  const targetResult=results.find(r=>r.id===editingResultId);
+  if(targetResult){
+    targetResult._pendingMysetName=name;
+  }
+
+  renderEditEquipmentEditor();
+});
+
+function openEdit(id){
+  const r=results.find(x=>x.id===id);if(!r)return;
+  editingResultId=id;
+  $("editRecordedAt").value=r.recordedAt;$("editGenre").value=r.genre;$("editStage").value=r.stage;
+  $("editMinutes").value=Math.floor(Number(r.totalSeconds)/60);$("editSeconds").value=Number(r.totalSeconds)%60;
+  $("editParticipants").value=r.participants;$("editCrystal").value=r.crystal;$("editStarWeapon").value=r.starWeapon;$("editStarParts").value=r.starParts;$("editMemo").value=r.memo||"";
+
+  editEquipmentDraft=equipmentFromResult(r);
+
+  delete r._pendingMysetName;
+  refreshEditMysetSelect();
+
+  if(r.mysetName && [...$("editMysetSelect").options].some(o=>o.value===r.mysetName)){
+    $("editMysetSelect").value=r.mysetName;
+  }else{
+    $("editMysetSelect").value="";
+  }
+
+  renderEditEquipmentEditor();
+  $("editDialog").showModal();
+}
+$("editDialog").addEventListener("close",()=>{
+  const r=results.find(x=>x.id===editingResultId);
+  if(r)delete r._pendingMysetName;
+});
+
+$("commitEdit").addEventListener("click",(ev)=>{
+  ev.preventDefault();
+  const r=results.find(x=>x.id===editingResultId);if(!r)return;
+  if(!/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/.test($("editRecordedAt").value.trim())){alert("記録日時は YYYY-MM-DD HH:MM:SS 形式で入力してください。");return;}
+  const min=intVal("editMinutes"),sec=intVal("editSeconds");
+  const w=equipmentSlots(editEquipmentDraft,"ブキ",1);
+  const g=equipmentSlots(editEquipmentDraft,"ガジェット",3);
+  const t=equipmentSlots(editEquipmentDraft,"秘宝パワー",6);
+  const tank=equipmentSlots(editEquipmentDraft,"タンク",1);
+  const partner=equipmentSlots(editEquipmentDraft,"パートナー",1);
+
+  Object.assign(r,{
+    recordedAt:$("editRecordedAt").value.trim(),
+    genre:$("editGenre").value.trim(),
+    stage:$("editStage").value.trim(),
+    clearTime:`${pad2(min)}:${pad2(sec)}`,
+    totalSeconds:min*60+sec,
+    participants:intVal("editParticipants",1),
+    crystal:intVal("editCrystal"),
+    starWeapon:intVal("editStarWeapon"),
+    starParts:intVal("editStarParts"),
+    memo:$("editMemo").value.trim(),
+    weapon:w[0],
+    gadgets:g,
+    treasures:t,
+    tank:tank[0],
+    partner:partner[0],
+    mysetName:r._pendingMysetName ?? r.mysetName
+  });
+
+  delete r._pendingMysetName;
+
+  persist();$("editDialog").close();refreshResults();
+});
+
+function csvEscape(v){
+  const s=String(v??"");
+  return /[",\n\r]/.test(s)?`"${s.replaceAll('"','""')}"`:s;
+}
+function resultToCsvRow(r){
+  const g=r.gadgets||[],t=r.treasures||[];
+  return [r.recordedAt,r.genre,r.stage,r.clearTime,r.totalSeconds,r.participants,r.mysetName||"",r.weapon||"",g[0]||"",g[1]||"",g[2]||"",t[0]||"",t[1]||"",t[2]||"",t[3]||"",t[4]||"",t[5]||"",r.tank||"",r.partner||"",r.crystal,r.starWeapon,r.starParts,r.memo||""];
+}
+$("exportCsv").addEventListener("click",()=>{
+  const csv="\uFEFF"+[CSV_FIELDS,...results.map(resultToCsvRow)].map(row=>row.map(csvEscape).join(",")).join("\r\n");
+  downloadBlob("results.csv",new Blob([csv],{type:"text/csv;charset=utf-8"}));
+});
+function downloadBlob(name,blob){
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+function parseCsv(text){
+  text=text.replace(/^\uFEFF/,"");
+  const rows=[];let row=[],field="",quoted=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(quoted){
+      if(c==='"'&&text[i+1]==='"'){field+='"';i++;}
+      else if(c==='"')quoted=false;else field+=c;
+    }else{
+      if(c==='"')quoted=true;
+      else if(c===","){row.push(field);field="";}
+      else if(c==="\n"){row.push(field.replace(/\r$/,""));rows.push(row);row=[];field="";}
+      else field+=c;
+    }
+  }
+  if(field||row.length){row.push(field.replace(/\r$/,""));rows.push(row);}
+  return rows;
+}
+$("importCsv").addEventListener("change",async ev=>{
+  const file=ev.target.files?.[0];if(!file)return;
+  try{
+    const rows=parseCsv(await file.text());const head=rows.shift();
+    const idx=Object.fromEntries(head.map((h,i)=>[h,i])); const get=(row,k)=>row[idx[k]]??"";
+    const imported=rows.filter(r=>r.some(Boolean)).map(row=>({
+      id:uid(),recordedAt:get(row,"記録日時"),genre:get(row,"ジャンル"),stage:get(row,"ステージ"),clearTime:get(row,"クリアタイム"),totalSeconds:Number(get(row,"クリア秒数"))||0,
+      participants:Number(get(row,"参加人数"))||1,mysetName:get(row,"マイセット名"),weapon:get(row,"ブキ"),
+      gadgets:[get(row,"ガジェット1"),get(row,"ガジェット2"),get(row,"ガジェット3")],
+      treasures:[get(row,"秘宝パワー1"),get(row,"秘宝パワー2"),get(row,"秘宝パワー3"),get(row,"秘宝パワー4"),get(row,"秘宝パワー5"),get(row,"秘宝パワー6")],
+      tank:get(row,"タンク"),partner:get(row,"パートナー"),crystal:Number(get(row,"ウズシオクリスタル"))||0,starWeapon:Number(get(row,"☆5ブキ"))||0,starParts:Number(get(row,"☆5パーツ"))||0,memo:get(row,"メモ")
+    }));
+    if(!confirm(`${imported.length}件のリザルトを読み込みます。\n現在のリザルトに追加しますか？`))return;
+    results.push(...imported);persist();refreshResults();alert("読み込みました。");
+  }catch(e){alert("CSVを読み込めませんでした。");console.error(e);}
+  ev.target.value="";
+});
+
+$("exportMysets").addEventListener("click",()=>{
+  downloadBlob(
+    "mysets.json",
+    new Blob([JSON.stringify(mysets,null,2)],{type:"application/json;charset=utf-8"})
+  );
+});
+
+function isValidLegacyMyset(item){
+  if(!item || typeof item!=="object")return false;
+  if(typeof item.name!=="string" || !item.name.trim())return false;
+  if(!item.equipment || typeof item.equipment!=="object")return false;
+
+  for(const category of Object.keys(CATEGORY_LIMITS)){
+    if(!Array.isArray(item.equipment[category]))return false;
+  }
+
+  return true;
+}
+
+$("importMysets").addEventListener("change",async ev=>{
+  const file=ev.target.files?.[0];
+  if(!file)return;
+
+  try{
+    const data=JSON.parse(await file.text());
+
+    if(!Array.isArray(data) || !data.every(isValidLegacyMyset)){
+      throw new Error("invalid mysets format");
+    }
+
+    const normalized=data.map(item=>({
+      name:String(item.name).trim(),
+      equipment:{
+        "ブキ":[...(item.equipment["ブキ"]||[])].map(String),
+        "ガジェット":[...(item.equipment["ガジェット"]||[])].map(String),
+        "秘宝パワー":[...(item.equipment["秘宝パワー"]||[])].map(String),
+        "タンク":[...(item.equipment["タンク"]||[])].map(String),
+        "パートナー":[...(item.equipment["パートナー"]||[])].map(String)
+      }
+    }));
+
+    const choice=confirm(
+      `${normalized.length}件のマイセットを読み込みます。\n\n` +
+      `OK: 現在のマイセットに追加・同名は上書き\n` +
+      `キャンセル: 読み込みを中止`
+    );
+
+    if(!choice)return;
+
+    for(const incoming of normalized){
+      const index=mysets.findIndex(m=>m.name===incoming.name);
+      if(index>=0)mysets[index]=incoming;
+      else mysets.push(incoming);
+    }
+
+    persist();
+    refreshMysetUi();
+    alert(`${normalized.length}件のマイセットを読み込みました。`);
+  }catch(e){
+    alert("mysets.json を読み込めませんでした。PC版の mysets.json 形式を選択してください。");
+    console.error(e);
+  }
+
+  ev.target.value="";
+});
+
+$("exportBackup").addEventListener("click",()=>{
+  const data={format:"spl-raiders-result-web-backup",version:1,exportedAt:new Date().toISOString(),results,mysets};
+  downloadBlob("spl-raiders-result-backup.json",new Blob([JSON.stringify(data,null,2)],{type:"application/json"}));
+});
+$("importBackup").addEventListener("change",async ev=>{
+  const file=ev.target.files?.[0];if(!file)return;
+  try{
+    const data=JSON.parse(await file.text());
+    if(data.format!=="spl-raiders-result-web-backup"||!Array.isArray(data.results)||!Array.isArray(data.mysets))throw new Error("format");
+    if(!confirm("現在のWeb版データをバックアップ内容で置き換えますか？"))return;
+    results=data.results;mysets=data.mysets;selectedResultId=null;persist();refreshMysetUi();refreshResults();alert("復元しました。");
+  }catch(e){alert("バックアップファイルを読み込めませんでした。");}
+  ev.target.value="";
+});
+
+
+// 数値入力欄をマウスホイールで増減
+function enableNumberInputWheel(){
+  document.querySelectorAll('input[type="number"]').forEach(input=>{
+    input.addEventListener("wheel", event=>{
+      if (document.activeElement !== input) {
+        input.focus();
+      }
+
+      event.preventDefault();
+
+      const step = Number(input.step && input.step !== "any" ? input.step : 1);
+      const min = input.min !== "" ? Number(input.min) : -Infinity;
+      const max = input.max !== "" ? Number(input.max) : Infinity;
+
+      let value = Number(input.value);
+      if (!Number.isFinite(value)) value = 0;
+
+      if (event.deltaY < 0) {
+        value += step;
+      } else if (event.deltaY > 0) {
+        value -= step;
+      }
+
+      value = Math.min(max, Math.max(min, value));
+      input.value = value;
+
+      // inputイベントを発火して無限食堂などの表示も即時更新
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      input.dispatchEvent(new Event("change", { bubbles: true }));
+    }, { passive: false });
+  });
+}
+
+init();
+setTimeout(enableNumberInputWheel, 0);
+
+  </script>
+</body>
+</html>
